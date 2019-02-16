@@ -4,11 +4,9 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Path;
 import java.util.Scanner;
 
 public class GrEngine extends JFrame {
@@ -21,9 +19,7 @@ public class GrEngine extends JFrame {
     JLabel labelImage2 = new JLabel(new ImageIcon(icon2));
 
     URL text1URL = getClass().getResource("/text/innerText.txt");
-
-    //JLabel labelImage1 = new JLabel(new ImageIcon("src/main/resources/images/France.png"));
-    //JLabel labelImage2 = new JLabel(new ImageIcon("images/png/England.png"));
+    //URL text2URL = getClass().getResource("/outerText.txt");
 
     JTextArea textArea1 = new JTextArea();
     JTextArea textArea2 = new JTextArea();
@@ -40,6 +36,8 @@ public class GrEngine extends JFrame {
 
         textArea2.setLineWrap(true);
         textArea2.setText(readTextFile("outerText.txt"));
+
+        //textArea2.setText(readTextFileU(text2URL));
 
 
         panel.add(labelImage1);
