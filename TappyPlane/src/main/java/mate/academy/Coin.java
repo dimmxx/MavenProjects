@@ -1,3 +1,4 @@
+package mate.academy;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
@@ -20,7 +21,8 @@ public class Coin extends FlyingCore{
     public Coin(){
         for(int i = 0; i < 6; i++) {
             try {
-                image[i] = ImageIO.read(new File("src/res/plane/coin/"+i+".png"));
+                //image[i] = ImageIO.read(new File("src/res/plane/coin/"+i+".png"));
+                image[i] = ImageIO.read(getClass().getResource("/coin/" +i+ ".png"));
             } catch (
                     IOException e) {
                 e.printStackTrace();

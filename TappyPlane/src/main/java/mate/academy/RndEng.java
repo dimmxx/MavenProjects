@@ -1,3 +1,5 @@
+package mate.academy;
+
 public class RndEng {
 
 

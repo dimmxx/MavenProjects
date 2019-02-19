@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77fd577c-7361-4d27-b4c7-5c1d7d76d6a2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mate/academy/p2_create_thread1/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mate/academy/p2_create_thread1/SmthRunable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mate/academy/p3_create_thread2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mate/academy/p4_create_thread3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mate/academy/p5_create_thread4/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mate/academy/p5_create_thread4/OtherThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mate/academy/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mate/academy/p1_multithread/Counter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mate/academy/p1_multithread/CounterThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mate/academy/p1_multithread/Main.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,30 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mate/academy/p5_create_thread4/OtherThread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
-              <folding>
-                <element signature="e#120#121#0" expanded="true" />
-                <element signature="e#156#157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mate/academy/p5_create_thread4/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,10 +41,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="724" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="67" />
+    <option name="y" value="27" />
+    <option name="width" value="1647" />
+    <option name="height" value="865" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -80,6 +55,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,8 +130,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,17 +240,18 @@
       <updated>1550510876762</updated>
       <workItem from="1550510878145" duration="1873000" />
       <workItem from="1550515319382" duration="307000" />
+      <workItem from="1550578290339" duration="224000" />
+      <workItem from="1550578637289" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2180000" />
+    <option name="totallyTimeSpent" value="2413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="724" extended-state="0" />
-    <editor active="true" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536349" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23021583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -352,21 +328,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mate/academy/p5_create_thread4/OtherThread.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mate/academy/p5_create_thread4/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" lean-forward="true" selection-start-column="11" selection-end-column="11" />
-          <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#156#157#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mate/academy/p5_create_thread4/Demo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mate/academy/p5_create_thread4/OtherThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

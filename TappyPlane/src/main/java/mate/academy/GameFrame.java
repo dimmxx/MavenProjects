@@ -1,3 +1,4 @@
+package mate.academy;
 import javax.swing.*;
 import java.awt.*;
 

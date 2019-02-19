@@ -1,3 +1,4 @@
+package mate.academy;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
@@ -14,7 +15,9 @@ public class Explosion {
 
         for (int i = 0; i < image.length; i++) {
             try {
-                image[i] = ImageIO.read(new File("src/res/plane/explosion/" +i+ ".png"));
+                //image[i] = ImageIO.read(new File("src/res/plane/explosion/" +i+ ".png"));
+                image[i] = ImageIO.read(getClass().getResource("/explosion/" +i+ ".png"));
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

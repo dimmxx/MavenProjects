@@ -1,3 +1,4 @@
+package mate.academy;
 import java.awt.*;
 
 public class CheckCollision {

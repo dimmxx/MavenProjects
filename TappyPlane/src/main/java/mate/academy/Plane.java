@@ -1,3 +1,4 @@
+package mate.academy;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
@@ -20,7 +21,8 @@ public class Plane {
         this.planeHeight = planeHeight;
         planeHitBox = new java.awt.Rectangle(PLANE_DISTANCE, planeHeight, 70, 43);
         try {
-            image = ImageIO.read(new File("src/res/plane/plane.png"));
+            image = ImageIO.read(getClass().getResource("/plane.png"));
+            //image = ImageIO.read(new File("src/res/plane/plane.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

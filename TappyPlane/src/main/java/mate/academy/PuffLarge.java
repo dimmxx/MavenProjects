@@ -1,3 +1,5 @@
+package mate.academy;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
@@ -15,7 +17,8 @@ public class PuffLarge extends Puff {
         hitBox = new Rectangle(posX + shiftX, posY + shiftY, hitBoxWidth, hitBoxHeight);
 
         try {
-            image[0] = ImageIO.read(new File("src/res/plane/cloud3.png"));
+            //image[0] = ImageIO.read(new File("src/res/plane/cloud3.png"));
+            image[0] = ImageIO.read(getClass().getResource("/cloud3.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

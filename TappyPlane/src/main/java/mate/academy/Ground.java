@@ -1,3 +1,4 @@
+package mate.academy;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
@@ -10,7 +11,8 @@ public class Ground {
 
     public Ground() {
         try {
-            imageGround = ImageIO.read(new File("src/res/plane/groundGrass.png"));
+            //imageGround = ImageIO.read(new File("src/res/plane/groundGrass.png"));
+            imageGround = ImageIO.read(getClass().getResource("/groundGrass.png"));
         } catch (
                 IOException e) {
             e.printStackTrace();
