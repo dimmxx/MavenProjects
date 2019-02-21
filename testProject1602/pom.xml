@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>mate1602.academy</groupId>
+    <groupId>lesson22_16022019.man.academy</groupId>
     <artifactId>testProject1602</artifactId>
     <version>1.1</version>
     <packaging>jar</packaging>
@@ -34,7 +34,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>mate1602.academy.App</mainClass>
+                            <mainClass>lesson22_16022019.man.academy.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
