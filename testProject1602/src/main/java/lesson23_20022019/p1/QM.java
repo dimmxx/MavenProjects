@@ -6,7 +6,6 @@ public class QM {
 
         Q q = new Q();
 
-
         new Worker1(q);
         new Worker2(q);
 
