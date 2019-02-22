@@ -1,4 +1,4 @@
-package homework.homework23;
+package homework.homework23.miners;
 
 public class Miner implements Runnable{
 
@@ -14,10 +14,10 @@ public class Miner implements Runnable{
 
     @Override
     public void run() {
-        while (gold.quantity > 0) {
-            gold.mineGold();
-            bag += 3;
-            System.out.println("Miner " + name + ", Bag: " + bag + ", Gold left: " + gold.quantity);
+        while (gold.getQuantity() > 0) {
+            int got = gold.mineGold();
+            bag += got;
+            System.out.println("Miner " + name + " Gold got: " + got + ", Bag: " + bag + ", Gold left: " + gold.getQuantity());
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
