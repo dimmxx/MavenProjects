@@ -10,7 +10,7 @@ public class MainCdl {
         CountDownLatch cdl = new CountDownLatch(5);
         System.out.println("Start");
 
-        new Latcher(cdl);
+        Latcher latcher = new Latcher(cdl);
 
         try {
             cdl.await();
