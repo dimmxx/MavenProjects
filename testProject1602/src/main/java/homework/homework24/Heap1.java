@@ -4,10 +4,12 @@ public class Heap1 {
 
     private int weight;
     private int shovel;
+    private String name;
 
-    public Heap1() {
-        this.weight = 100;
-        this.shovel =3;
+    public Heap1(int weight, int shovel) {
+        this.name = "Heap1";
+        this.weight = weight;
+        this.shovel = shovel;
     }
 
     public int getWeight() {
@@ -20,14 +22,14 @@ public class Heap1 {
 
     protected int takeCoal(){
         printHeap(weight);
-        System.out.println("\nStarting loading ...");
+        System.out.println("\n" + name + ": Starting shipment ...");
         if(weight >= shovel){
             weight -= shovel;
-            System.out.println("Loaded " + shovel + " kg");
+            System.out.println(name + ": Loaded " + shovel + " kg");
             printHeap(weight - shovel);
             return shovel;
         }else{
-            System.out.println("Loaded " + weight + " kg");
+            System.out.println(name + ": Loaded " + weight + " kg");
             printHeap(weight - weight);
             int swap = weight;
             weight = 0;
@@ -36,7 +38,7 @@ public class Heap1 {
     }
 
     private void printHeap(int quantity){
-        System.out.print("Heap1: ");
+        System.out.print(name + " : ");
         for (int i = 0; i < quantity; i++){
             System.out.print("|");
         }
