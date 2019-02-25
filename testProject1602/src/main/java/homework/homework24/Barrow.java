@@ -4,6 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class Barrow {
 
+    private String name;
     private int capacity;
     private int quantity;
     private int speed;
@@ -13,6 +14,7 @@ public class Barrow {
     Semaphore unloader = new Semaphore(0);
 
     public Barrow() {
+        this.name = "Barrow";
         this.capacity = 6;
         this.speed = 5;
     }
@@ -27,25 +29,18 @@ public class Barrow {
     }
 
     public void loadBarrow(int quantity) {
-        try {
-            loader.acquire();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        this.quantity += quantity;
 
-        transport.release();
+        this.quantity += quantity;
+        System.out.println("\n" + name + ": loaded " + quantity);
+        System.out.println(name + " : has " + this.quantity);
+
+
 
 
     }
 
 
     public void goBarrow(){
-        try {
-            transport.acquire();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
     }
 

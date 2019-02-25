@@ -25,11 +25,11 @@ public class Heap1 {
         System.out.println("\n" + name + ": Starting shipment ...");
         if(weight >= shovel){
             weight -= shovel;
-            System.out.println(name + ": Loaded " + shovel + " kg");
+            System.out.println(name + ": Loaded " + shovel);
             printHeap(weight - shovel);
             return shovel;
         }else{
-            System.out.println(name + ": Loaded " + weight + " kg");
+            System.out.println(name + ": Loaded " + weight);
             printHeap(weight - weight);
             int swap = weight;
             weight = 0;
@@ -42,7 +42,7 @@ public class Heap1 {
         for (int i = 0; i < quantity; i++){
             System.out.print("|");
         }
-        System.out.print(" : " + quantity + " kg");
+        System.out.print(" : " + quantity);
 
     }
 
