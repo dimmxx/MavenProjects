@@ -2,22 +2,46 @@ package homework.homework24;
 
 import java.util.concurrent.Semaphore;
 
-public class Transport {
+public class Transport implements Runnable {
 
     protected String name;
-    protected Heap1 heap1;
     protected Barrow barrow;
 
-    protected Semaphore loader;
-    protected Semaphore transport;
-    protected Semaphore unloader;
+    protected Semaphore loaderSem;
+    protected Semaphore transportSem;
+    protected Semaphore unloaderSem;
 
-    public Transport(Heap1 heap1, Barrow barrow, Semaphore loader, Semaphore transport, Semaphore unloader) {
+    public Transport(Barrow barrow, Semaphore loaderSem, Semaphore transportSem, Semaphore unloaderSem) {
         this.name = "Transport";
-        this.heap1 = heap1;
         this.barrow = barrow;
-        this.loader = loader;
-        this.transport = transport;
-        this.unloader = unloader;
+        this.loaderSem = loaderSem;
+        this.transportSem = transportSem;
+        this.unloaderSem = unloaderSem;
+        new Thread(this).start();
+    }
+
+    @Override
+    public void run() {
+
+        System.out.println(">>>>>>>>" + name + ": comes to " + name + " acquire");
+
+        while (true) {
+            try {
+                transportSem.acquire();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(">>>>>>>>" + name + ": passed " + name + " acquire");
+
+            barrow.goBarrow();
+
+            if(barrow.getQuantity() != 0){
+                unloaderSem.release();
+            }else loaderSem.release();
+
+
+        }
+
+
     }
 }

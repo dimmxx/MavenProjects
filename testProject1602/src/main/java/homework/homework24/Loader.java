@@ -6,16 +6,16 @@ import java.util.concurrent.TimeUnit;
 public class Loader implements Runnable {
 
     private String name;
-    private Heap1 heap1;
+    private Heap heap;
     private Barrow barrow;
 
     private Semaphore loaderSem;
     private Semaphore transportSem;
     private Semaphore unloaderSem;
 
-    public Loader(Heap1 heap1, Barrow barrow, Semaphore loaderSem, Semaphore transportSem, Semaphore unloaderSem) {
+    public Loader(Heap heap, Barrow barrow, Semaphore loaderSem, Semaphore transportSem, Semaphore unloaderSem) {
         this.name = "Loader";
-        this.heap1 = heap1;
+        this.heap = heap;
         this.barrow = barrow;
         this.loaderSem = loaderSem;
         this.transportSem = transportSem;
@@ -26,25 +26,23 @@ public class Loader implements Runnable {
     @Override
     public void run() {
 
-        while (heap1.getWeight() > 0){
+        while (heap.getWeight() > 0){
 
-            System.out.println(name + ": comes to loader.acquire");
+            System.out.println(">>>>>>>>" + name + ": comes to " + name + " acquire");
             try {
                 loaderSem.acquire();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(name + ": passed loader.acquire");
-
+            System.out.println(">>>>>>>>" + name + ": passed " + name + " acquire");
 
             int iter;
-            if(heap1.getWeight() >= heap1.getShovel()){
-                iter = barrow.getCapacity()/heap1.getShovel();
+            if(heap.getWeight() >= heap.getShovel()){
+                iter = barrow.getCapacity()/ heap.getShovel();
             } else iter = 1;
 
             for(int i = 0; i < iter; i++){
-                barrow.loadBarrow(heap1.takeCoal());
-
+                barrow.loadBarrow(heap.giveCoal());
 
                 try {
                     TimeUnit.SECONDS.sleep(1);
@@ -52,6 +50,8 @@ public class Loader implements Runnable {
                     e.printStackTrace();
                 }
             }
+
+            transportSem.release();
 
         }
     }
