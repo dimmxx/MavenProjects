@@ -8,18 +8,18 @@ public class Loader implements Runnable {
     private String name;
     private Heap heap;
     private Barrow barrow;
+    private Monitor monitor;
 
     private Semaphore loaderSem;
     private Semaphore transportSem;
-    private Semaphore unloaderSem;
 
-    public Loader(Heap heap, Barrow barrow, Semaphore loaderSem, Semaphore transportSem, Semaphore unloaderSem) {
+    public Loader(Heap heap, Barrow barrow, Semaphore loaderSem, Semaphore transportSem, Monitor monitor) {
         this.name = "Loader";
         this.heap = heap;
         this.barrow = barrow;
         this.loaderSem = loaderSem;
         this.transportSem = transportSem;
-        this.unloaderSem = unloaderSem;
+        this.monitor = monitor;
         new Thread(this).start();
     }
 
@@ -54,8 +54,6 @@ public class Loader implements Runnable {
             transportSem.release();
 
         }
+        monitor.setLoaderIsAlive(false);
     }
-
-
-
 }

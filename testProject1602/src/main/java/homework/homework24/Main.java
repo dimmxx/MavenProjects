@@ -6,22 +6,25 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Heap heapOne = new Heap("HeapOne", 10, 3);
-        Heap heapTwo = new Heap("HeapTwo", 0, 3);
 
-        Barrow barrow = new Barrow();
+        Monitor monitor = new Monitor();
+
+        Heap heapOne = new Heap("HeapOne", 10, 3, monitor);
+        Heap heapTwo = new Heap("HeapTwo", 0, 3, monitor);
+
+        Barrow barrow = new Barrow(monitor);
+
+
 
         Semaphore loaderSem = new Semaphore(1);
         Semaphore transportSem = new Semaphore(0);
         Semaphore unloaderSem = new Semaphore(0);
 
-        Loader loader = new Loader(heapOne, barrow, loaderSem, transportSem, unloaderSem );
+        Loader loader = new Loader(heapOne, barrow, loaderSem, transportSem, monitor);
 
+        Transport transport = new Transport(barrow, loaderSem, transportSem, unloaderSem, monitor);
 
-
-        Transport transport = new Transport(barrow, loaderSem, transportSem, unloaderSem);
-
-        Unloader unloader = new Unloader(heapTwo, barrow, loaderSem, transportSem, unloaderSem);
+        Unloader unloader = new Unloader(heapTwo, barrow, transportSem, unloaderSem, monitor);
 
 
 

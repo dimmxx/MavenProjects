@@ -9,15 +9,14 @@ public class Barrow {
     private int capacity;
     private int quantity;
     private int speed;
+    private Monitor monitor;
 
-    Semaphore transport = new Semaphore(0);
-    Semaphore loader = new Semaphore(1);
-    Semaphore unloader = new Semaphore(0);
 
-    public Barrow() {
+    public Barrow(Monitor monitor) {
         this.name = "Barrow";
         this.capacity = 6;
         this.speed = 5;
+        this.monitor = monitor;
     }
 
     public int getCapacity() {
@@ -33,6 +32,7 @@ public class Barrow {
         this.quantity += quantity;
         System.out.println("\n" + name + ": Loaded " + quantity);
         System.out.println(name + ": Has " + this.quantity);
+        if(quantity != 0) monitor.setBarrowIsEmpty(false);
     }
 
     public int unloadBarrow() {
@@ -40,6 +40,7 @@ public class Barrow {
         System.out.println("\n" + name + ": Unloaded " + this.quantity);
         this.quantity = 0;
         System.out.println(name + ": Has " + this.quantity);
+        if(quantity == 0) monitor.setBarrowIsEmpty(true);
         return swap;
     }
 

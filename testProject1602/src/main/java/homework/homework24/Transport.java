@@ -4,19 +4,22 @@ import java.util.concurrent.Semaphore;
 
 public class Transport implements Runnable {
 
-    protected String name;
-    protected Barrow barrow;
+    private String name;
+    private Barrow barrow;
+    private Monitor monitor;
 
-    protected Semaphore loaderSem;
-    protected Semaphore transportSem;
-    protected Semaphore unloaderSem;
 
-    public Transport(Barrow barrow, Semaphore loaderSem, Semaphore transportSem, Semaphore unloaderSem) {
+    private Semaphore loaderSem;
+    private Semaphore transportSem;
+    private Semaphore unloaderSem;
+
+    public Transport(Barrow barrow, Semaphore loaderSem, Semaphore transportSem, Semaphore unloaderSem, Monitor monitor) {
         this.name = "Transport";
         this.barrow = barrow;
         this.loaderSem = loaderSem;
         this.transportSem = transportSem;
         this.unloaderSem = unloaderSem;
+        this.monitor = monitor;
         new Thread(this).start();
     }
 
@@ -38,9 +41,9 @@ public class Transport implements Runnable {
             if(barrow.getQuantity() != 0){
                 unloaderSem.release();
             }else loaderSem.release();
-
-
         }
+
+
 
 
     }

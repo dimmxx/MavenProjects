@@ -7,25 +7,25 @@ public class Unloader implements Runnable {
     private String name;
     private Heap heapTwo;
     private Barrow barrow;
+    private Monitor monitor;
 
-    private Semaphore loaderSem;
     private Semaphore transportSem;
     private Semaphore unloaderSem;
 
-    public Unloader(Heap heapTwo, Barrow barrow, Semaphore loaderSem, Semaphore transportSem, Semaphore unloaderSem) {
+    public Unloader(Heap heapTwo, Barrow barrow, Semaphore transportSem, Semaphore unloaderSem, Monitor monitor) {
         this.name = "Unloader";
         this.heapTwo = heapTwo;
         this.barrow = barrow;
-        this.loaderSem = loaderSem;
         this.transportSem = transportSem;
         this.unloaderSem = unloaderSem;
+        this.monitor = monitor;
         new Thread(this).start();
     }
 
     @Override
     public void run() {
 
-        while (true){
+        while (true) {
 
             System.out.println("\n" + ">>>>>>>>" + name + ": comes to " + name + " acquire");
             try {
@@ -35,21 +35,11 @@ public class Unloader implements Runnable {
             }
             System.out.println("\n" + ">>>>>>>>" + name + ": passed " + name + " acquire");
 
-
             heapTwo.getCoal(barrow.unloadBarrow());
 
             transportSem.release();
 
-
-
-
-
-
-
-
         }
-
-
 
 
 
