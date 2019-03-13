@@ -34,7 +34,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>lesson22_16022019_thread.man.academy.App</mainClass>
+                            <mainClass>lessons.lesson22_16022019_thread.man.academy.App</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

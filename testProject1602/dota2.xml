@@ -1,14 +1,13 @@
 <Dota2>
-    <hero>
 
-     <name>Invoker</name>
-     <level>12</level>
-
+    <hero id = "001">
+        <name>Invoker</name>
+        <level>12</level>
     </hero>
 
-    <hero>
-      <name>Pudge</name>
-      <level>12</level>
-
+    <hero id = "002">
+        <name>Pudge</name>
+        <level>1</level>
     </hero>
+
 </Dota2>
