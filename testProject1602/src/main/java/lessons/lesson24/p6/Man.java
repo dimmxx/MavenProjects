@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class Man implements Runnable{
 
     private String name;
-    CyclicBarrier clb;
+    private CyclicBarrier clb;
 
     public Man(String name, CyclicBarrier clb) {
         this.name = name;
