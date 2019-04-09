@@ -2,52 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8358bbf-78ba-4c46-901c-222228db984b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/artifacts/academy_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/artifacts/academy_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../academy/academy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jstl_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/.idea/libraries/mysql_connector_java_8_0_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/.idea/libraries/postgresql_42_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/.idea/libraries/sqlite_jdbc_3_27_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/.idea/libraries/target.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/homework/homework32_servlets/AuthServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/homework/homework32_servlets/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/homework/homework32_servlets/PostgresSQLDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/homework/homework32_servlets/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/homework/homework32_servlets/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/homework/homework32_servlets/loginForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/homework/homework32_servlets/registerForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/Valid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/com/google/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/com/google/MyServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/com/google/myservlet.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/com/google/single.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/indexTimeOut.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/indexTimeOut_denis.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/pudge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/pudge.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/register3.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/valid.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson33_03042019/jhfjf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson33_03042019/jstl.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testProject1602/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testProject1602/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testProject1602/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testProject1602/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testProject1602/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testProject1602/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson31_27032019/registerFormOne.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson31_27032019/registerFormOne.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testProject1602/testProject1602.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../testProject1602/testProject1602.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/artifacts/auth_artId_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/artifacts/auth_artId_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/auth_artId.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auth_artId/src/main/java/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/artifacts/dogmvc_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/artifacts/dogmvc_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dogmvc/dogmvc.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,8 +43,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlet/DogServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="26" column="60" lean-forward="true" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+            <state relative-caret-position="520">
+              <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/DogController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -74,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/model/Dog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="120">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -105,10 +95,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/view/DogServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Dog.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/DogController.java" />
         <option value="$PROJECT_DIR$/src/main/java/servlet/DogServlet.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Dog.java" />
       </list>
     </option>
   </component>
@@ -119,7 +109,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="723" />
@@ -130,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,6 +182,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,17 +222,19 @@
       <workItem from="1554747690209" duration="100000" />
       <workItem from="1554747939550" duration="2063000" />
       <workItem from="1554751000123" duration="878000" />
+      <workItem from="1554781187966" duration="18000" />
+      <workItem from="1554781729963" duration="453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3041000" />
+    <option name="totallyTimeSpent" value="3512000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="723" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25767368" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -279,13 +271,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/DogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="742">
@@ -296,13 +281,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Dog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/view/dogview.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -310,10 +288,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/DogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/servlet/DogServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="60" lean-forward="true" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+        <state relative-caret-position="520">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
