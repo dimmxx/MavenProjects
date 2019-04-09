@@ -2,11 +2,12 @@
   <library name="Maven: junit:junit:3.8.1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1.jar!/" />
-      <root url="jar:///usr/local/apache-tomcat-9.0.17/lib/servlet-api.jar!/" />
-      <root url="file:///usr/local/apache-tomcat-9.0.17/lib" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-    <jarDirectory url="file:///usr/local/apache-tomcat-9.0.17/lib" recursive="false" />
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/junit/junit/3.8.1/junit-3.8.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
