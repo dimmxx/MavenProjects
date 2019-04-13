@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+<filter>
+  <filter-name>RequestLoggingFilter</filter-name> <!-- mandatory -->
+  <filter-class>filters.MyFilter</filter-class> <!-- mandatory -->
+  <init-param> <!-- optional -->
+  <param-name>myParam</param-name>
+  <param-value>Some value from filter</param-value>
+  </init-param>
+</filter>
+
+<filter-mapping>
+  <filter-name>RequestLoggingFilter</filter-name> <!-- mandatory -->
+  <url-pattern>/*</url-pattern> <!-- either url-pattern or servlet-name is mandatory -->
+</filter-mapping>
+
+  <servlet>
+  	<servlet-name>CatController</servlet-name>
+  	<display-name>CatController</display-name>
+  	<description></description>
+  	<servlet-class>controllers.CatController</servlet-class>
+  </servlet>
+
+  <servlet>
+  	<servlet-name>ProductController</servlet-name>
+  	<display-name>ProductController</display-name>
+  	<description></description>
+  	<servlet-class>controllers.ProductController</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  	<servlet-name>CatController</servlet-name>
+  	<url-pattern>/CatController</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+  	<servlet-name>ProductController</servlet-name>
+  	<url-pattern>/ProductController</url-pattern>
+  </servlet-mapping>
+
+</web-app>

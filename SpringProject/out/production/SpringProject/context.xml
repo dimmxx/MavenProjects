@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="item"    class="ua.itea.Item">
+<constructor-arg value="Boots of travel"/>
+    </bean>
+
+    <bean id="pudge"    class="ua.itea.Pudge">
+<property name="name" value="Zeus"/>
+  <property name="level" value="13"/>
+    <property name="item" ref="item"/>
+    </bean>
+
+
+
+
+</beans>
