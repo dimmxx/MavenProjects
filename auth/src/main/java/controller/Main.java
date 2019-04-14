@@ -9,9 +9,9 @@ public class Main {
 
 
         //User user = new User("linda", "123", "linda@yahoo.com", 45, "f", "Paris, France", "comment", true);
-        PostgresSQLDAO db = new PostgresSQLDAO();
+       PostgresSQLDAO db = new PostgresSQLDAO();
 
-        //db.createTable();
+        db.createTable();
         //db.dropTable("users");
 
         //user = db.authUser(user);
@@ -28,9 +28,6 @@ public class Main {
 
 
         db.close();
-
-
-
 
     }
 

@@ -6,7 +6,7 @@ import model.User;
 public class PostgresSQLDAO {
 
     //Queries
-    private static final String CREATE_TABLE_POSTGESQL = "CREATE TABLE users (id serial PRIMARY KEY, username VARCHAR (50) UNIQUE NOT NULL, password VARCHAR (50) NOT NULL, email VARCHAR (50) UNIQUE, age INTEGER, gender VARCHAR (1), address VARCHAR(50), comment VARCHAR (500), agree BOOLEAN, role VARCHAR (10), created_on TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, last_login TIMESTAMP)";
+    private static final String CREATE_TABLE_POSTGESQL = "CREATE TABLE users (id serial PRIMARY KEY, username VARCHAR (50) UNIQUE NOT NULL, password VARCHAR (50) NOT NULL, email VARCHAR (50) UNIQUE, age VARCHAR (3), gender VARCHAR (1), address VARCHAR(50), comment VARCHAR (100), agree VARCHAR (1), role VARCHAR (10), created_on TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP, last_login TIMESTAMP)";
     
     private final static String ADD_USER = "INSERT INTO users (username, password, email, age, gender, address, comment, agree, role) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
     private final static String GET_USER = "SELECT username, password, email, role FROM users WHERE username= ? AND password= ?";
@@ -96,17 +96,19 @@ public class PostgresSQLDAO {
             prs.setString(1, user.getUsername());
             prs.setString(2, user.getPassword());
             prs.setString(3, user.getEmail());
-            prs.setInt(4, user.getAge());
+            prs.setString(4, user.getAge());
             prs.setString(5, user.getGender());
             prs.setString(6, user.getAddress());
             prs.setString(7, user.getComment());
-            prs.setBoolean(8, user.isAgree());
+            prs.setString(8, user.getAgree());
             prs.setString(9, user.getRole());
             prs.execute();
             prs.close();
+            user.setMessageSb("Registration succeded. Login with your username and password\n");
             return user;
         } catch (SQLException e) {
             e.printStackTrace();
+            user.setMessageSb("Registration failed:\n");
             user.setMessageSb("<li>" + e.toString() + "</li>");
             return user;
         }
@@ -132,35 +134,6 @@ public class PostgresSQLDAO {
             return userDB;
         }
     }
-
-    public boolean isNotRegistered(String username) {
-        String name = null;
-        try {
-            PreparedStatement prs = conn.prepareStatement(CHECK_USER);
-            prs.setString(1, username);
-            ResultSet rs = prs.executeQuery();
-            while (rs.next()) {
-                name = rs.getString(1);
-            }
-            prs.close();
-
-            if(name != null){
-                return false;
-            } else return true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return true;
-        }
-    }
-
-
-
-
-
-
-
-
-
 
 
 }

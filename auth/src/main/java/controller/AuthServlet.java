@@ -7,6 +7,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,7 +17,7 @@ public class AuthServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        User user = new User (req.getParameter("username"), req.getParameter("password"));
+        User user = new User(req.getParameter("username"), req.getParameter("password"));
 
         PostgresSQLDAO db = new PostgresSQLDAO();
         user = db.authUser(user);
@@ -42,23 +43,44 @@ public class AuthServlet extends HttpServlet {
         String password = req.getParameter("password");
         String reTypePasword = req.getParameter("repassword");
         String email = req.getParameter("email");
-        int age = Integer.parseInt(req.getParameter("age"));
+        String age = req.getParameter("age");
         String gender = req.getParameter("gender");
         String address = req.getParameter("address");
         String comment = req.getParameter("comment");
-        Boolean agree = Boolean.valueOf(req.getParameter("agree"));
+        String agree = req.getParameter("agree");
 
-        User user = new User(username, password, email, age, gender, address, comment, agree, "user");
+        User user = new User(username, password, email, age, gender, address, comment, agree);
+        StringBuilder errorMessage = checkInput(req);
 
-        PostgresSQLDAO db = new PostgresSQLDAO();
-        user = db.addUser(user);
+        HttpSession session = req.getSession();
+        session.setMaxInactiveInterval(60);
+        if(username != null && username != ""){
+            session.setAttribute("sessionName", username);
+        }
+        if(gender != null && gender != "") {
+            session.setAttribute("gender", gender);
+        }
+        if(gender != null && address != "") {
+            session.setAttribute("address", address);
+        }
 
-        db.close();
-
-        req.setAttribute("user", user);
-        RequestDispatcher rd =
-                req.getRequestDispatcher("WEB-INF/viewJSP/result1.jsp");
-        rd.forward(req, resp);
+        if (errorMessage.length() == 0) {
+            user.setRole("user");
+            PostgresSQLDAO db = new PostgresSQLDAO();
+            user = db.addUser(user);
+            db.close();
+            req.setAttribute("user", user);
+            RequestDispatcher rd =
+                    req.getRequestDispatcher("WEB-INF/viewJSP/result.jsp");
+            rd.forward(req, resp);
+        } else {
+            user.setMessageSb("Registration failed:\n");
+            user.setMessageSb(errorMessage.toString());
+            req.setAttribute("user", user);
+            RequestDispatcher rd =
+                    req.getRequestDispatcher("WEB-INF/viewJSP/result.jsp");
+            rd.forward(req, resp);
+        }
     }
 
     protected StringBuilder checkInput(HttpServletRequest request) {
@@ -76,7 +98,7 @@ public class AuthServlet extends HttpServlet {
         StringBuilder errorMessage = new StringBuilder();
 
         matcher = VALID_NAME_REGEX.matcher(request.getParameter("username"));
-        if(!matcher.find()){
+        if (!matcher.find()) {
             errorMessage.append("<li>Invalid username (3-8 only letters)</li>");
         }
 

@@ -5,11 +5,11 @@ public class User {
     private String username;
     private String password;
     private String email;
-    private int age;
+    private String age;
     private String gender;
     private String address;
     private String comment;
-    private boolean agree;
+    private String agree;
     private String role;
     private StringBuilder messageSb = new StringBuilder();
 
@@ -22,7 +22,7 @@ public class User {
         this.password = password;
     }
 
-    public User(String username, String password, String email, int age, String gender, String address, String comment, boolean agree, String role) {
+    public User(String username, String password, String email, String age, String gender, String address, String comment, String agree) {
         this.username = username;
         this.password = password;
         this.email = email;
@@ -58,11 +58,11 @@ public class User {
         this.email = email;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -90,11 +90,11 @@ public class User {
         this.comment = comment;
     }
 
-    public boolean isAgree() {
+    public String getAgree() {
         return agree;
     }
 
-    public void setAgree(boolean agree) {
+    public void setAgree(String agree) {
         this.agree = agree;
     }
 
