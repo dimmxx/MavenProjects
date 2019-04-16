@@ -15,10 +15,9 @@
 
 <c:forEach items="${products}" var="product"> <table border="0">
     <tr><td width="200">${product.productName}</td><td width="300"></td></tr>
-    <tr><td width="200"><img src="./static/images/${product.id}.jpg" width="200"></td>
-        <td width="300">${product.description}</td></tr>
+    <tr><td width="200"><img src="./static/images/${product.id}.jpg" width="200"></td><td width="300">${product.description}</td></tr>
     <tr><td width="200">${product.price}</td><td width="300">
-        <input type="submit" value="buy"/></td></tr>
+        <input type="submit" value="buy"></td></tr>
 
     </table><br><br>
 </c:forEach>
