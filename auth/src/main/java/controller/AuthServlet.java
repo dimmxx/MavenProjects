@@ -17,6 +17,13 @@ public class AuthServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+        String username = req.getParameter("username");
+        HttpSession session = req.getSession();
+        session.setMaxInactiveInterval(60);
+        if(username != null && username != ""){
+            session.setAttribute("sessionName", username);
+        }
+
         User user = new User(req.getParameter("username"), req.getParameter("password"));
 
         PostgresSQLDAO db = new PostgresSQLDAO();

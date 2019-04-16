@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86e7cbe2-9679-4284-96d0-5a10f0074ee0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/registerForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Mate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Mate/src/main/webapp/WEB-INF/views/products.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../Mate/src/main/webapp/WEB-INF/views/products.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loginForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.iml" beforeDir="false" afterPath="$PROJECT_DIR$/auth.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AuthServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PostgresSQLDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PostgresSQLDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewJSP/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewJSP/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewJSP/result1.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/registerForm.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/auth.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/auth.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/auth/WEB-INF/classes/controller/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/auth/WEB-INF/classes/controller/AuthServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/auth/WEB-INF/classes/controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/auth/WEB-INF/classes/controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/auth/WEB-INF/classes/controller/PostgresSQLDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/auth/WEB-INF/classes/controller/PostgresSQLDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/auth/WEB-INF/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/auth/WEB-INF/classes/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/auth/WEB-INF/viewJSP/result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/auth/WEB-INF/viewJSP/result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/auth/WEB-INF/viewJSP/result1.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/AuthServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AuthServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/PostgresSQLDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PostgresSQLDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../auth_artId/.idea/artifacts/auth_artId_war.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../auth_artId/.idea/artifacts/auth_artId_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../auth_artId/.idea/compiler.xml" beforeDir="false" />
@@ -69,7 +57,6 @@
       <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dogmvc/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dogmvc/dogmvc.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../testProject1602/src/main/java/lessons/lesson32_30032019/form1 (1).jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -84,55 +71,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/AuthServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/viewJSP/result.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="33" column="16" lean-forward="true" selection-start-line="32" selection-end-line="34" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/registerForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/loginForm.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -155,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="209">
+              <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -164,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/PostgresSQLDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2020">
+            <state relative-caret-position="1353">
               <caret line="102" column="44" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
             </state>
           </provider>
@@ -210,16 +149,16 @@
         <option value="$PROJECT_DIR$/src/registerForm.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewJSP/result1.jsp" />
         <option value="$PROJECT_DIR$/src/registerForm.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/Main.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/test.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/controller/PostgresSQLDAO.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/registerForm.html" />
         <option value="$PROJECT_DIR$/src/main/java/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/test.html" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/AuthServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/registerForm.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/viewJSP/result.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/AuthServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/Main.java" />
       </list>
     </option>
   </component>
@@ -241,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -311,6 +249,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -323,9 +262,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.3632184" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
@@ -361,6 +300,99 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.17" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_auth" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50196" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50197" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -402,11 +434,13 @@
       <workItem from="1555182915053" duration="4972000" />
       <workItem from="1555208804656" duration="2861000" />
       <workItem from="1555239306680" duration="4896000" />
+      <workItem from="1555257172561" duration="795000" />
+      <workItem from="1555322777679" duration="1322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54256000" />
+    <option name="totallyTimeSpent" value="56373000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,7 +455,7 @@
     <frame x="0" y="23" width="1280" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21163167" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21728595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -505,6 +539,7 @@
     <entry file="file://$PROJECT_DIR$/src/registerForm.html" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/test.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/registerForm.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -512,50 +547,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/PostgresSQLDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2020">
+        <state relative-caret-position="1353">
           <caret line="102" column="44" selection-start-line="102" selection-start-column="44" selection-end-line="102" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/registerForm.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        <state relative-caret-position="209">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/viewJSP/result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="853">
+          <caret line="45" column="7" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/AuthServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="69" column="36" lean-forward="true" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="36" />
+        <state relative-caret-position="20">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/test.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/registerForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="80">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/loginForm.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="260">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -566,17 +599,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/viewJSP/result.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/loginForm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="32" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        <state>
+          <folding>
+            <element signature="n#style#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -597,10 +625,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
+          <last-edited>Web (auth)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.10449321" />
               </list>
             </option>
           </splitter-proportions>
@@ -630,6 +659,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>auth</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
