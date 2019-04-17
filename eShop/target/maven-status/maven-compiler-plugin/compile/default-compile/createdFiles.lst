@@ -1,5 +1,0 @@
-controller/ProductController.class
-controller/Main.class
-servlet/ProductServlet.class
-model/Product.class
-controller/DbWorker.class

@@ -1,4 +1,0 @@
-controller/Main.class
-model/User.class
-controller/AuthServlet.class
-controller/PostgresSQLDAO.class
