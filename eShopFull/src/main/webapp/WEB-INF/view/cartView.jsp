@@ -5,13 +5,13 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>Cart</title>
 </head>
 <body style="background-color:linen;">
 
 <center>
 
-<c:forEach items="${products}" var="product">
+<c:forEach items="${cart.productList}" var="product">
     <table border="0">
     <tr>
         <td width="200">${product.productName}</td>
@@ -23,7 +23,7 @@
     </tr>
     <tr>
         <td width="200">${product.price}</td>
-        <td width="300"><form action="./CartServlet" method="post"><input type="hidden" name="productId" value="${product.id}"><input type="submit" value="buy"/></form></td>
+        <td width="300"><input type="submit" value="buy"/></td>
     </tr>
     </table><br><br>
 </c:forEach>

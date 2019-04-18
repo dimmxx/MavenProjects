@@ -20,7 +20,8 @@ public class ProductServlet extends HttpServlet {
 
         DbWorker db = new DbWorker();
         ProductController productController = new ProductController(db);
-        List<Product> products = productController.getProducts();
+
+        List<Product> products = productController.getProducts(req.getParameter("category"));
 
         req.setAttribute("products", products);
 

@@ -4,17 +4,20 @@ import java.sql.*;
 
 public class DbWorker {
 
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://s3.thehost.com.ua/itea2";
+//    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+//    static final String DB_URL = "jdbc:mysql://s3.thehost.com.ua/itea2";
+//
+//    static final String USER = "helen";
+//    static final String PASS = "123456";
 
-    static final String USER = "helen";
-    static final String PASS = "123456";
+    private static final String JDBC_DRIVER = "org.postgresql.Driver";
+    private static final String DB_URL = "jdbc:postgresql://amazonpostgressql.c1mepymbmqks.us-east-2.rds.amazonaws.com:5432/testdb";
+
+    private static final String USER = "master";
+    private static final String PASS = "Qwerty77";
 
     private Connection conn;
     private Statement st;
-
-    private final static String ADD_MATE = "INSERT INTO mate (name, age) VALUES";
-    private final static String GET_MATE = "SELECT * FROM mate WHERE id = ";
 
 
     public DbWorker() {
@@ -41,8 +44,22 @@ public class DbWorker {
     }
 
 
+    public Connection getConnection(){
+        return conn;
+    }
+
     public Statement getStatement(){
         return st;
+    }
+
+
+    public void closeConnection() {
+        try {
+            st.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 
 
