@@ -14,7 +14,7 @@ public class DbWorker {
     private static final String DB_URL = "jdbc:postgresql://amazonpostgressql.c1mepymbmqks.us-east-2.rds.amazonaws.com:5432/testdb";
 
     private static final String USER = "master";
-    private static final String PASS = "Qwerty77";
+    private static final String PASS = "Revolution";
 
     private Connection conn;
     private Statement st;
@@ -43,7 +43,6 @@ public class DbWorker {
         }
     }
 
-
     public Connection getConnection(){
         return conn;
     }
@@ -51,7 +50,6 @@ public class DbWorker {
     public Statement getStatement(){
         return st;
     }
-
 
     public void closeConnection() {
         try {
@@ -61,18 +59,4 @@ public class DbWorker {
             e.printStackTrace();
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

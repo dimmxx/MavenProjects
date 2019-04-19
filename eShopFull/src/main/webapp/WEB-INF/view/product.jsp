@@ -23,7 +23,12 @@
     </tr>
     <tr>
         <td width="200">${product.price}</td>
-        <td width="300"><form action="./CartServlet" method="post"><input type="hidden" name="productId" value="${product.id}"><input type="submit" value="buy"/></form></td>
+        <td width="300">
+            <form action="./CartServlet" method="post">
+                <input type="hidden" name="productId" value="${product.id}">
+                <input type="submit" value="buy"/>
+            </form>
+        </td>
     </tr>
     </table><br><br>
 </c:forEach>

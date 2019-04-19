@@ -11,10 +11,8 @@ public class CartController {
         this.cart = cart;
     }
 
-    public void addProduct(Product product){
+    public void addProductToCart(Product product){
         cart.getProductList().add(product);
-
-
     }
 
 

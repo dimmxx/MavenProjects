@@ -16,10 +16,6 @@ public class ProductController {
     private final static String CREATE_TABLE_POSTGESQL = "CREATE TABLE products (id serial PRIMARY KEY, name VARCHAR (50) NOT NULL, description VARCHAR (1000), price INTEGER, category INTEGER, image VARCHAR (1000))";
     private final static String ADD_PRODUCT = "INSERT INTO products (name, description, price, category, image) VALUES (?, ?, ?, ?, ?)";
 
-
-
-
-
     public ProductController(DbWorker db) {
         this.db = db;
     }

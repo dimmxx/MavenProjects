@@ -19,7 +19,6 @@ public class CartServlet extends HttpServlet {
 
     Logger logger = Logger.getLogger(CartServlet.class.getName());
 
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -29,25 +28,22 @@ public class CartServlet extends HttpServlet {
         if (session.getAttribute("cart") == null){
             cart = new Cart();
         }else {
-            cart = (Cart) session.getAttribute("cart");
+            cart = (Cart)session.getAttribute("cart");
         }
 
-            CartController cartController = new CartController(cart);
+        CartController cartController = new CartController(cart);
 
         String productId = req.getParameter("productId");
         logger.info("productId=" + productId);
 
         if (productId != null) {
-
             DbWorker db = new DbWorker();
             ProductController productController = new ProductController(db);
             Product product = productController.getProduct(Integer.valueOf(productId));
             logger.info("product=" + product);
-            cartController.addProduct(product);
+            cartController.addProductToCart(product);
             session.setAttribute("cart", cartController.getCart());
-
         }
-
 
         logger.info("" + cartController.getCart());
         req.setAttribute("cart", cartController.getCart());
