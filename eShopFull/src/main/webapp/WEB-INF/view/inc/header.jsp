@@ -12,7 +12,7 @@
 <link href="static/styles/style.css" rel="stylesheet" type="text/css" media="screen" />
 
 </head>
-<body style="background-color:linen;">
+<body style="background-color: linen;">
 <div id="header" class="container">
 	<div id="logo">
 		<h1><a href="#">Мой магазин </a></h1>
@@ -24,7 +24,7 @@
 			<li><a href="./ProductServlet?category=all">Товары</a></li>
 			<li><a href="registration.php">Регистрация</a></li>
 			<li><a href="login.php">Вход</a></li>
-			<li><a href="cart.php">Корзина</a></li>
+			<li><a href="./CartServlet">Корзина</a></li>
 		</ul>
 	</div>
 </div>

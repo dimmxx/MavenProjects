@@ -6,9 +6,9 @@
         <table border=1>
         <tr>
         <td width="252" align="left">
-        <font color=white>
+        <font color=black>
         Вы авторизировались как Антон<br />
-        В вашей корзине ${sessionScope.cart.size} товаров.
+        В вашей корзине ${not empty sessionScope.cart.mapProductQuantity ? sessionScope.cart.mapProductQuantity : " 0 "} товаров
         </font>
         </td>
         </tr>

@@ -9,28 +9,33 @@
 </head>
 <body style="background-color:linen;">
 
-<center>
-
-<c:forEach items="${cart.productList}" var="product">
-    <table border="0">
+<c:forEach var="mapEntry" items="${cart.productMap}">
+    <table border="1">
     <tr>
-        <td width="200">${product.productName}</td>
-        <td width="300"></td>
+        <td width="200">${mapEntry.key.productName} </td>
+        <td width="500">Quantity: ${mapEntry.value}</td>
     </tr>
     <tr>
-        <td width="200"><img src="./static/images/${product.image}" width="200"></td>
-        <td width="300">${product.description}</td>
+        <td width="200"><img src="./static/images/${mapEntry.key.image}" width="200"></td>
+        <td width="500">${mapEntry.key.description}</td>
     </tr>
     <tr>
-        <td width="200">${product.price}</td>
-        <td width="300"><input type="submit" value="buy"/></td>
+        <td width="200">${mapEntry.key.price}$</td>
     </tr>
     </table><br><br>
 </c:forEach>
 
 
+<table border="1">
+    <tr>
+        <td width="200">Product quantity: ${cart.mapProductQuantity}</td>
+        <td width="500">Total amount: ${cart.mapTotalAmount}$</td>
+        <td width="200"><input type="submit" value="Checkout"/></td>
+    </tr>
+    </table><br><br>
 
 
+<a href="./ShowServlet">Continue shopping</a>
 
 </body>
 </html>

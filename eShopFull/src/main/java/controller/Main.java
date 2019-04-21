@@ -1,22 +1,21 @@
 package controller;
 
+import model.Cart;
 import model.Product;
+
+import java.util.Iterator;
+import java.util.Map;
 
 public class Main {
 
     public static void main(String[] args) {
 
-//        Product product = new Product("Lenovo ThinkPad X230 Notebook i5 8G",
-//                "",
-//                720,
-//                3,
-//                "1-3.jpg");
-//
-//        DbWorker db = new DbWorker();
-//
-//        ProductController productController = new ProductController(db);
-//
-//        //System.out.println(productController.addProductToCart(product));
+        DbWorkerSQLite db = new DbWorkerSQLite();
+
+        ProductController productController = new ProductController(db);
+
+        productController.createTable();
+
 
     }
 }

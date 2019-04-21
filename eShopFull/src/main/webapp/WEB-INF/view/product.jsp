@@ -9,33 +9,28 @@
 </head>
 <body style="background-color:linen;">
 
-<center>
 
 <c:forEach items="${products}" var="product">
-    <table border="0">
+    <table border="1">
     <tr>
         <td width="200">${product.productName}</td>
-        <td width="300"></td>
+        <td width="500"></td>
     </tr>
     <tr>
         <td width="200"><img src="./static/images/${product.image}" width="200"></td>
-        <td width="300">${product.description}</td>
+        <td width="500">${product.description}</td>
     </tr>
     <tr>
-        <td width="200">${product.price}</td>
-        <td width="300">
+        <td width="200">${product.price}$</td>
+        <td width="500">
             <form action="./CartServlet" method="post">
                 <input type="hidden" name="productId" value="${product.id}">
-                <input type="submit" value="buy"/>
+                <input type="submit" value="buy" style="height:50px; width:100px"/>
             </form>
         </td>
     </tr>
     </table><br><br>
 </c:forEach>
-
-
-
-
-
+    
 </body>
 </html>

@@ -17,13 +17,9 @@ import java.util.logging.Logger;
 
 public class CartServlet extends HttpServlet {
 
-    Logger logger = Logger.getLogger(CartServlet.class.getName());
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         Cart cart = null;
-
         HttpSession session = req.getSession();
         if (session.getAttribute("cart") == null){
             cart = new Cart();
@@ -34,21 +30,19 @@ public class CartServlet extends HttpServlet {
         CartController cartController = new CartController(cart);
 
         String productId = req.getParameter("productId");
-        logger.info("productId=" + productId);
 
         if (productId != null) {
             DbWorker db = new DbWorker();
             ProductController productController = new ProductController(db);
             Product product = productController.getProduct(Integer.valueOf(productId));
-            logger.info("product=" + product);
-            cartController.addProductToCart(product);
+            cartController.addProductToCartMap(product);
             session.setAttribute("cart", cartController.getCart());
         }
 
-        logger.info("" + cartController.getCart());
-        req.setAttribute("cart", cartController.getCart());
-        //RequestDispatcher rd = req.getRequestDispatcher("/ShowServlet");
         resp.sendRedirect("./ShowServlet");
+
+        //RequestDispatcher rd = req.getRequestDispatcher("/ShowServlet");
+        //rd.forward(req, resp);
     }
 
 

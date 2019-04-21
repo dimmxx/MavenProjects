@@ -11,18 +11,17 @@ public class CartController {
         this.cart = cart;
     }
 
-    public void addProductToCart(Product product){
-        cart.getProductList().add(product);
-    }
+    public void addProductToCartMap(Product product){
+        if(cart.getProductMap().containsKey(product)){
+            cart.getProductMap().put(product, cart.getProductMap().get(product) + 1);
+            } else {
+            cart.getProductMap().put(product, 1);
+        }
 
+    }
 
     public Cart getCart() {
         return cart;
     }
-
-    public void setCart(Cart cart) {
-        this.cart = cart;
-    }
-
 
 }

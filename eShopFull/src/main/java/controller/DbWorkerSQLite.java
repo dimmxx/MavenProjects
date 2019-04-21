@@ -1,25 +1,19 @@
 package controller;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 
-public class DbWorker {
+public class DbWorkerSQLite extends DbWorker{
 
-//    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-//    static final String DB_URL = "jdbc:mysql://s3.thehost.com.ua/itea2";
-//
-//    static final String USER = "helen";
-//    static final String PASS = "123456";
-
-    private static final String JDBC_DRIVER = "org.postgresql.Driver";
-    private static final String DB_URL = "jdbc:postgresql://amazonpostgressql.c1mepymbmqks.us-east-2.rds.amazonaws.com:5432/testdb";
-
-    private static final String USER = "master";
-    private static final String PASS = "Revolution";
+    private static final String JDBC_DRIVER = "org.sqlite.JDBC";
+    private static final String DB_URL = "jdbc:sqlite:sample.db";
 
     private Connection conn;
     private Statement st;
 
-    public DbWorker() {
+    public DbWorkerSQLite() {
         try {
             Class.forName(JDBC_DRIVER).newInstance();
         } catch (Exception ex) {
@@ -27,7 +21,7 @@ public class DbWorker {
         }
 
         try {
-            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            conn = DriverManager.getConnection(DB_URL);
         } catch (SQLException ex) {
             // handle any errors
             System.out.println("SQLException: " + ex.getMessage());
@@ -58,4 +52,11 @@ public class DbWorker {
             e.printStackTrace();
         }
     }
+
+
+
+
+
+
+
 }

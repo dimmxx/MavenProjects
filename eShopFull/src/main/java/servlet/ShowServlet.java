@@ -12,12 +12,8 @@ public class ShowServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-
-        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/view/products.jsp");
+        RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/view/page.jsp");
         rd.forward(req, resp);
-
-
-
 
 
     }

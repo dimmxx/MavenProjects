@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Product {
 
     private int id;
@@ -78,5 +80,23 @@ public class Product {
                 ", category=" + category +
                 ", image='" + image + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return id == product.id &&
+                price == product.price &&
+                category == product.category &&
+                Objects.equals(productName, product.productName) &&
+                Objects.equals(description, product.description) &&
+                Objects.equals(image, product.image);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, productName, description, price, category, image);
     }
 }

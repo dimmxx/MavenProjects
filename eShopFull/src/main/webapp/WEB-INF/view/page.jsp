@@ -15,18 +15,16 @@
 
 	<!-- end -->
 
-
-
 <table>
     <tr>
         <td width=167 align=center>
-            КАТЕГОРИЯ 1
+            <a href="./ProductServlet?category=1">КАТЕГОРИЯ 1</a>
         </td>
         <td width=177 align=center>
-            КАТЕГОРИЯ 1
+            <a href="./ProductServlet?category=2">КАТЕГОРИЯ 2</a>
         </td>
         <td width=160 align=center>
-            КАТЕГОРИЯ 1
+            <a href="./ProductServlet?category=3">КАТЕГОРИЯ 3</a>
         </td>
     </tr>
 </table>

@@ -21,18 +21,12 @@ public class ProductServlet extends HttpServlet {
         DbWorker db = new DbWorker();
         ProductController productController = new ProductController(db);
 
-        List<Product> products = productController.getProducts(req.getParameter("category"));
+        List<Product> products = productController.getProductsFromDb(req.getParameter("category"));
 
         req.setAttribute("products", products);
 
         RequestDispatcher rd = req.getRequestDispatcher("WEB-INF/view/product.jsp");
         rd.forward(req, resp);
-
-
-
-
-
-
 
 
 

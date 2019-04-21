@@ -20,8 +20,7 @@ public class ProductController {
         this.db = db;
     }
 
-    public List<Product> getProducts(String category) {
-
+    public List<Product> getProductsFromDb(String category) {
         String query;
         if (category.equals("all")) {
             query = GET_PRODUCTS_ALL;
@@ -50,6 +49,7 @@ public class ProductController {
         return products;
     }
 
+
     public boolean createTable() {
         Statement st = db.getStatement();
         try {
@@ -63,7 +63,8 @@ public class ProductController {
         return false;
     }
 
-    public boolean addProduct(Product product) {
+
+    public boolean addProductToDb(Product product) {
         Connection conn = db.getConnection();
         Statement st = db.getStatement();
         try {
@@ -86,7 +87,6 @@ public class ProductController {
 
 
     public Product getProduct(int id) {
-
         Statement st = db.getStatement();
         Product product = null;
         try {
@@ -99,7 +99,6 @@ public class ProductController {
                 product.setPrice(rs.getInt("price"));
                 product.setCategory(rs.getInt("category"));
                 product.setImage(rs.getString("image"));
-
             }
             db.closeConnection();
             st.close();
@@ -108,11 +107,4 @@ public class ProductController {
         }
         return product;
     }
-
-
-
-
-
-
-
 }
