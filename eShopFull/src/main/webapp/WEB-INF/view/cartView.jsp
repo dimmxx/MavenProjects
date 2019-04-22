@@ -39,3 +39,5 @@
 
 </body>
 </html>
+
+<%@include file="inc/footer.jsp" %>
