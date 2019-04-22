@@ -2,7 +2,7 @@ package controller;
 
 import java.sql.*;
 
-public class DbWorker {
+public class DbWorker{
 
 //    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 //    static final String DB_URL = "jdbc:mysql://s3.thehost.com.ua/itea2";

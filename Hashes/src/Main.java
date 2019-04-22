@@ -65,14 +65,17 @@ public class Main {
 //    System.out.println(it.next());
 
 
-            for (int value:map.values()) {
-                System.out.println(value);
+        for(User item : map.keySet()){
+            System.out.println(item);
+        }
 
-            }
+        for (int value : map.values()) {
+            System.out.println(value);
+        }
 
-for (Map.Entry<User, Integer> entry : map.entrySet()) {
-                System.out.println(entry);
+        for (Map.Entry<User, Integer> entry : map.entrySet()) {
+            System.out.println(entry);
 
-            }
+        }
     }
 }

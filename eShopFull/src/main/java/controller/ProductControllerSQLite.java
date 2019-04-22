@@ -6,17 +6,17 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductController {
+public class ProductControllerSQLite {
 
-    DbWorker db;
+    DbWorkerSQLite db;
 
     private final static String GET_PRODUCTS_ALL = "SELECT * FROM products";
     private final static String GET_PRODUCT = "SELECT * FROM products WHERE id=";
     private final static String GET_PRODUCTS_CATEGORY = "SELECT * FROM products WHERE category=";
-    private final static String CREATE_TABLE_POSTGESQL = "CREATE TABLE products (id serial PRIMARY KEY, name VARCHAR (50) NOT NULL, description VARCHAR (1000), price INTEGER, category INTEGER, image VARCHAR (1000))";
+    private final static String CREATE_TABLE_SQLite = "CREATE TABLE products (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR (50) NOT NULL, description VARCHAR (1000), price INTEGER, category INTEGER, image VARCHAR (1000))";
     private final static String ADD_PRODUCT = "INSERT INTO products (name, description, price, category, image) VALUES (?, ?, ?, ?, ?)";
 
-    public ProductController(DbWorker db) {
+    public ProductControllerSQLite(DbWorkerSQLite db) {
         this.db = db;
     }
 
@@ -52,20 +52,6 @@ public class ProductController {
 
     public boolean createTable() {
         Statement st = db.getStatement();
-        try {
-            st.executeUpdate(CREATE_TABLE_POSTGESQL);
-            db.closeConnection();
-            st.close();
-            return true;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
-
-    public boolean createTableSQLite() {
-        Statement st = db.getStatement();
-        String CREATE_TABLE_SQLite = "CREATE TABLE products (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, name VARCHAR (50) NOT NULL, description VARCHAR (1000), price INTEGER, category INTEGER, image VARCHAR (1000))";
         try {
             st.executeUpdate(CREATE_TABLE_SQLite);
             db.closeConnection();

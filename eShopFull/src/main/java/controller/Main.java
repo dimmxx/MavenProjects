@@ -12,7 +12,7 @@ public class Main {
 
         DbWorkerSQLite db = new DbWorkerSQLite();
 
-        ProductController productController = new ProductController(db);
+        ProductControllerSQLite productController = new ProductControllerSQLite(db);
 
         productController.createTable();
 

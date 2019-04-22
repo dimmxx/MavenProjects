@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DbWorkerSQLite extends DbWorker{
+public class DbWorkerSQLite {
 
     private static final String JDBC_DRIVER = "org.sqlite.JDBC";
     private static final String DB_URL = "jdbc:sqlite:sample.db";
