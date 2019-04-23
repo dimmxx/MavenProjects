@@ -20,6 +20,7 @@ public class AuthServlet extends HttpServlet {
         String username = req.getParameter("username");
         HttpSession session = req.getSession();
         session.setMaxInactiveInterval(60);
+
         if(username != null && username != ""){
             session.setAttribute("sessionName", username);
         }

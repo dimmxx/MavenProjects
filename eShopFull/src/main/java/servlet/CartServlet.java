@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.logging.Logger;
 
 public class CartServlet extends HttpServlet {
 
@@ -41,8 +40,6 @@ public class CartServlet extends HttpServlet {
 
         resp.sendRedirect("./ShowServlet");
 
-        //RequestDispatcher rd = req.getRequestDispatcher("/ShowServlet");
-        //rd.forward(req, resp);
     }
 
 

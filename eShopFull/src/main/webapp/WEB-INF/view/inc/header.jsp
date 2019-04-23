@@ -44,7 +44,7 @@
 <div class="topnav">
     <a href="./ShowServlet">MAIN</a>
     <a href="./ProductServlet?category=all">PRODUCTS</a>
-    <a href="#">LOG IN</a>
+    <a href="loginForm.jsp">LOG IN</a>
     <a href="#">LOG OUT</a>
     <a href="./CartServlet">CART
         (${not empty sessionScope.cart.mapProductQuantity ? sessionScope.cart.mapProductQuantity : " 0 "})</a>

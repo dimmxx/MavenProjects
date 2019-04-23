@@ -5,7 +5,6 @@
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
 
-
     <servlet>
         <servlet-name>ProductServlet</servlet-name>
         <servlet-class>servlet.ProductServlet</servlet-class>
@@ -14,7 +13,6 @@
         <servlet-name>ProductServlet</servlet-name>
         <url-pattern>/ProductServlet</url-pattern>
     </servlet-mapping>
-
 
     <servlet>
         <servlet-name>ShowServlet</servlet-name>
@@ -25,7 +23,6 @@
         <url-pattern>/ShowServlet</url-pattern>
     </servlet-mapping>
 
-
     <servlet>
         <servlet-name>CartServlet</servlet-name>
         <servlet-class>servlet.CartServlet</servlet-class>
@@ -35,5 +32,13 @@
         <url-pattern>/CartServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>AuthServletLogIn</servlet-name>
+        <servlet-class>servlet.AuthServletLogIn</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthServletLogIn</servlet-name>
+        <url-pattern>/AuthServletLogIn</url-pattern>
+    </servlet-mapping>
 
 </web-app>

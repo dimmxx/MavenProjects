@@ -11,7 +11,7 @@
 <li><a href="./ProductServlet?category=all">Все категории товаров</a></li>
 
 <li><a href="registration.php">Регистрация</a></li>
-<li><a href="login.php">Вход</a></li>
+<li><a href="/loginForm.jsp">Вход</a></li>
 <li><a href="./CartServlet">Корзина (${not empty sessionScope.cart.mapProductQuantity ? sessionScope.cart.mapProductQuantity : "0"})</a></li>
 </ul>
 </h3>

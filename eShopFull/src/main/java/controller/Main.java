@@ -10,11 +10,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        DbWorkerSQLite db = new DbWorkerSQLite();
+        DbWorker db = new DbWorker();
 
-        ProductControllerSQLite productController = new ProductControllerSQLite(db);
-
-        productController.createTable();
+        UserController userController = new UserController(db);
 
 
     }
