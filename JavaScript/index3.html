@@ -1,0 +1,61 @@
+<script
+  src="https://code.jquery.com/jquery-3.4.0.js"
+  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+  crossorigin="anonymous"></script>
+
+
+<div id="p1b">Product#1</div>
+<div><img src="minus.png" onclick="minus('p1')" width="25px" height="25px"/>
+  <span id="p1">1</span>
+<img src="plus.png" onclick="plus('p1')" width="25px" height="25px"/></div>
+<div><input onclick="buy('p1')" type="button" value="Buy"/></div>
+<hr>
+
+<div id="p2b">Product#2</div>
+<div><img src="minus.png" onclick="minus('p2')" width="25px" height="25px"/>
+  <span id="p2">1</span>
+<img src="plus.png" onclick="plus('p2')" width="25px" height="25px"/></div>
+<div><input onclick="buy('p2')" type="button" value="Buy"/></div>
+
+
+<script>
+function minus(id){
+  var product = document.getElementById(id);
+  var temp = +product.innerHTML - 1;
+  product.innerHTML = temp;
+
+}
+
+function plus(id){
+  var product = document.getElementById(id);
+  var temp = +product.innerHTML + 1;
+  product.innerHTML = temp;
+
+}
+
+function buy(id){
+var product = document.getElementById(id + "b").innerHTML;
+  var productQuantity = document.getElementById(id).innerHTML;
+//alert(product + ": " + productQuantity);
+
+  $.ajax({
+    url: "http://code-master.com.ua/uglycatapi/getflea?id=10",
+    type: "GET",
+    //data: {id : product,qbt :  },
+    dataType: "html", success: function(html){
+    alert(html);
+  }
+  });
+
+
+
+
+
+}
+
+
+
+
+
+
+</script>
