@@ -1,10 +1,37 @@
+<%@ page import="java.util.Iterator" %>
+<%@ page import="java.util.Enumeration" %>
+<%@ page import="java.util.Map" %>
 <html>
 <body>
 <h2>Hello World!</h2>
 
+
 Username: <%=request.getParameter("username")%><br>
 Password: <%=request.getParameter("password")%><br>
 Filter: <%=request.getAttribute("filter")%><br>
+session.getAttributeNames(): <%=session.getAttributeNames()%><br>
+
+<%
+
+
+    session.setAttribute("dima", "name");
+    session.setAttribute("123", "pass");
+    Enumeration enumeration = session.getAttributeNames();
+		while (enumeration.hasMoreElements()) {
+		    String item = enumeration.nextElement().toString();
+			out.write(item + "<br>");
+		}
+
+
+
+
+
+%>
+
+session.getId(): <%=session.getId()%><br>
+session.getMaxInactiveInterval(): <%=session.getMaxInactiveInterval()%><br>
+
+
 -------------------------<br>
 request.getRequestURI(): <%=request.getRequestURI()%><br>
 request.getRequestURL(): <%=request.getRequestURL()%><br>
