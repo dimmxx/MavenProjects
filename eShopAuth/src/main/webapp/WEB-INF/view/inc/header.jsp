@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%@ page language="java" isELIgnored="false" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="keywords" content=""/>
@@ -44,7 +45,7 @@
 <div class="topnav">
     <a href="./">MAIN</a>
     <a href="./ProductServlet?category=all">PRODUCTS</a>
-    <a href="#">LOG IN</a>
+    <a href="loginForm.jsp">LOG IN</a>
     <a href="#">LOG OUT</a>
     <a href="./CartServlet">CART
         (${not empty sessionScope.cart.mapProductQuantity ? sessionScope.cart.mapProductQuantity : " 0 "})</a>
@@ -55,7 +56,11 @@
     <tr>
         <td width="300" align="left">
             <font color=black>
-                Вы авторизировались как Антон<br/>
+
+
+                You are ${not empty sessionScope.user ? ("hhh" + sessionScope.user.username) : " not logged in"}</a>
+
+                <br/>
                 В вашей <a href="./CartServlet">корзине</a>
                 ${not empty sessionScope.cart.mapProductQuantity ? sessionScope.cart.mapProductQuantity : " 0 "}
                 товаров

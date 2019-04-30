@@ -112,4 +112,20 @@ public class User {
     public void setMessageSb(String message) {
         this.messageSb.append(message);
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", address='" + address + '\'' +
+                ", comment='" + comment + '\'' +
+                ", agree=" + agree +
+                ", role='" + role + '\'' +
+                ", messageSb=" + messageSb +
+                '}';
+    }
 }

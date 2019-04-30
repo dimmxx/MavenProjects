@@ -1,9 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" %>
 <html>
 <head>
     <title>Login</title>
 </head>
-<body style="background-color:tan">
+<body style="background-color:cornflowerblue;">
 <h2>Login</h2>
 
 <form id='loginForm' action='./AuthServletLogin' method='post'>

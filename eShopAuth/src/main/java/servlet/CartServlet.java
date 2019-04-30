@@ -41,8 +41,6 @@ public class CartServlet extends HttpServlet {
 
         resp.sendRedirect("./");
 
-        //RequestDispatcher rd = req.getRequestDispatcher("/ShowServlet");
-        //rd.forward(req, resp);
     }
 
 

@@ -35,5 +35,18 @@
         <url-pattern>/CartServlet</url-pattern>
     </servlet-mapping>
 
+        <servlet>
+        <servlet-name>AuthServletLogin</servlet-name>
+        <servlet-class>servlet.AuthServletLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthServletLogin</servlet-name>
+        <url-pattern>/AuthServletLogin</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
 
 </web-app>
