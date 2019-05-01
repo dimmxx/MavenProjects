@@ -46,7 +46,7 @@
     <a href="./">MAIN</a>
     <a href="./ProductServlet?category=all">PRODUCTS</a>
     <a href="loginForm.jsp">LOG IN</a>
-    <a href="#">LOG OUT</a>
+    <a href="./LogoutServlet">LOG OUT</a>
     <a href="./CartServlet">CART
         (${not empty sessionScope.cart.mapProductQuantity ? sessionScope.cart.mapProductQuantity : " 0 "})</a>
 
@@ -57,13 +57,9 @@
         <td width="300" align="left">
             <font color=black>
 
+               You are ${not empty sessionScope.user ? ('logged in as <a href="./ShowAccountServlet">' += sessionScope.user.username += '</a>') : " not logged in</a>"}<br>
+               You have ${not empty sessionScope.cart.mapProductQuantity ? sessionScope.cart.mapProductQuantity : " 0 "} items in your <a href="./CartServlet">cart</a>
 
-                You are ${not empty sessionScope.user ? ("hhh" + sessionScope.user.username) : " not logged in"}</a>
-
-                <br/>
-                В вашей <a href="./CartServlet">корзине</a>
-                ${not empty sessionScope.cart.mapProductQuantity ? sessionScope.cart.mapProductQuantity : " 0 "}
-                товаров
             </font>
         </td>
     </tr>

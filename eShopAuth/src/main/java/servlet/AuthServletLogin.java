@@ -43,7 +43,7 @@ public class AuthServletLogin extends HttpServlet {
 
         req.setAttribute("user", user);
         RequestDispatcher rd =
-                req.getRequestDispatcher("WEB-INF/view/result.jsp");
+                req.getRequestDispatcher("WEB-INF/view/account.jsp");
         rd.forward(req, resp);
 
 

@@ -1,4 +1,3 @@
-<%@ page language="java" %>
 <html>
 <head>
     <title>Login</title>
