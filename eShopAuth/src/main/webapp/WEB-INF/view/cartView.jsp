@@ -30,7 +30,11 @@
     <tr>
         <td width="200">Product quantity: ${cart.mapProductQuantity}</td>
         <td width="500">Total amount: ${cart.mapTotalAmount}$</td>
-        <td width="200"><input type="submit" value="Checkout"/></td>
+        <td width="200">
+            <form id='checkout' action='./CheckoutServlet' method='post'>
+            <input type="submit" value="Checkout"/>
+            </form>
+        </td>
     </tr>
     </table><br><br>
 
