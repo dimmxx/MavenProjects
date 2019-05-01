@@ -8,6 +8,7 @@
     <title>Title</title>
 </head>
 <body style="background-color:cornflowerblue;">
+<h2>Product list</h2>
 
 
 <c:forEach items="${products}" var="product">
@@ -25,7 +26,7 @@
         <td width="500">
             <form action="./CartServlet" method="post">
                 <input type="hidden" name="productId" value="${product.id}">
-                <input type="submit" value="buy" style="height:50px; width:100px"/>
+                <input type="submit" value="Add to cart" style="height:50px; width:150px"/>
             </form>
         </td>
     </tr>

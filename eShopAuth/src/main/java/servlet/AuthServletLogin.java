@@ -19,8 +19,8 @@ public class AuthServletLogin extends HttpServlet {
 
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        HttpSession session = req.getSession(false);
-        session.setMaxInactiveInterval(60);
+        HttpSession session = req.getSession();
+        session.setMaxInactiveInterval(300);
 
         DbWorker db = new DbWorker();
         User user = new User(username, password);

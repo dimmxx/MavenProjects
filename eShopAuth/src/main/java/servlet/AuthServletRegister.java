@@ -28,8 +28,13 @@ public class AuthServletRegister extends HttpServlet {
         String comment = req.getParameter("comment");
         String agree = req.getParameter("agree");
 
-        HttpSession session = req.getSession(false);
-        session.setMaxInactiveInterval(60);
+        int ageInt =1;
+        try{
+            ageInt = Integer.parseInt(age);
+        }catch (NumberFormatException e){ }
+
+        HttpSession session = req.getSession();
+        session.setMaxInactiveInterval(300);
         if (gender != null && gender != "") {
             session.setAttribute("gender", gender);
         }
@@ -37,7 +42,7 @@ public class AuthServletRegister extends HttpServlet {
             session.setAttribute("address", address);
         }
 
-        User user = new User(username, password, email, Integer.parseInt(age), gender, address, comment, Integer.parseInt(agree));
+        User user = new User(username, password, email, ageInt, gender, address, comment, Integer.parseInt(agree));
         StringBuilder errorMessage = checkInput(req);
 
         if (errorMessage.length() == 0) {
@@ -48,7 +53,7 @@ public class AuthServletRegister extends HttpServlet {
             User temp = user;
             user = null;
             user = userController.addUser(temp);
-            if (user == null || user.getMessageSb().length() == 0) {
+            if (user.getMessageSb().toString().contains("succeded")) {
                 session.setAttribute("user", user);
                 session.setAttribute("role", user.getRole());
                 session.setAttribute("sessionName", user.getUsername() + session.getId());
@@ -81,7 +86,7 @@ public class AuthServletRegister extends HttpServlet {
         final Pattern VALID_PASS_REGEX =
                 Pattern.compile("^[A-Za-z0-9]{3,8}$");
         final Pattern VALID_AGE_REGEX =
-                Pattern.compile("^[0-9]{1,3}$");
+                Pattern.compile("^[0-9]{2,3}$");
 
         Matcher matcher;
         StringBuilder errorMessage = new StringBuilder();

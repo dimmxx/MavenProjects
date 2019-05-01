@@ -52,6 +52,11 @@
     </form>
 
     <form id='registerForm' action='./registerForm.jsp' method='post'>
+        <input type="hidden" name="username" value="${user.username}">
+    <input type="hidden" name="email" value="${user.email}">
+    <input type="hidden" name="age" value="${user.age}">
+    <input type="hidden" name="comment" value="${user.comment}">
+
         <input type='submit' value='Register'>
     </form>
 </c:if>

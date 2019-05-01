@@ -8,9 +8,11 @@
 <head>
     <meta charset=utf-8/>
     <title>Register</title>
-<style>
-    form {display: inline;}
-</style>
+    <style>
+        form {
+            display: inline;
+        }
+    </style>
 </head>
 <body style="background-color:cornflowerblue">
 <h2>Register</h2>
@@ -45,6 +47,7 @@
     <br><br><textarea cols='50' rows='7' placeholder='comment'
                       name='comment'><%=(comment != null ? comment : "")%></textarea>
     <br><br><input type="checkbox" name="agree" value="1"> I agree with terms and conditions<br>
+    <input type='hidden' value='0' name='agree'>
 
     <br><br><input type='submit' value='Register'/>
 </form>

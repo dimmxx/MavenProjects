@@ -67,8 +67,8 @@ public class UserController {
             prs.setString(9, user.getRole());
             prs.execute();
             prs.close();
-            user.setMessageSb("Registration succeded. Login with your username and password\n");
             db.closeConnection();
+            user.setMessageSb("Registration succeded. Login with your username and password\n");
             return user;
         } catch (SQLException e) {
             e.printStackTrace();
