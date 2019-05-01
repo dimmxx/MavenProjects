@@ -35,6 +35,7 @@
         <url-pattern>/CartServlet</url-pattern>
     </servlet-mapping>
 
+
     <servlet>
         <servlet-name>AuthServletLogin</servlet-name>
         <servlet-class>servlet.AuthServletLogin</servlet-class>
@@ -44,6 +45,7 @@
         <url-pattern>/AuthServletLogin</url-pattern>
     </servlet-mapping>
 
+
     <servlet>
         <servlet-name>ShowAccountServlet</servlet-name>
         <servlet-class>servlet.ShowAccountServlet</servlet-class>
@@ -52,6 +54,7 @@
         <servlet-name>ShowAccountServlet</servlet-name>
         <url-pattern>/ShowAccountServlet</url-pattern>
     </servlet-mapping>
+
 
     <servlet>
         <servlet-name>LogoutServlet</servlet-name>
@@ -63,5 +66,13 @@
     </servlet-mapping>
 
 
+        <servlet>
+        <servlet-name>AuthServletRegister</servlet-name>
+        <servlet-class>servlet.AuthServletRegister</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthServletRegister</servlet-name>
+        <url-pattern>/AuthServletRegister</url-pattern>
+    </servlet-mapping>
 
 </web-app>

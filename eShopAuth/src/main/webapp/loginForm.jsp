@@ -1,10 +1,12 @@
 <html>
 <head>
-    <meta charset=utf-8 />
+    <meta charset=utf-8/>
     <title>Login</title>
     <style>
-  form { display: inline; }
-</style>
+        form {
+            display: inline;
+        }
+    </style>
 
 </head>
 <body style="background-color:cornflowerblue;">
@@ -19,12 +21,6 @@
 <form id='RegisterForm' action='./registerForm.jsp' method='post'>
     <br><input type='submit' value='Register'>
 </form>
-
-
-
-
-
-
 
 
 </body>
