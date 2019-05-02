@@ -10,6 +10,8 @@
 <body style="background-color:cornflowerblue;">
 <h2>Login</h2>
 
+<%=session.getAttribute("filter")%>
+
 <form id='loginForm' action='./AuthServletLogin' method='post'>
     <input type='text' placeholder='username' name='username'>
     <br><input type='password' placeholder='password' name='password'>
