@@ -1,7 +1,9 @@
 <div id="result">
   <h1>Bye</h1>
 </div>
+
 <img id="picture" src="3-3.jpg"/>
+
 <input onclick="move()" type="button" value="Picture"/>
 
 <input type="text" id="text"/>
@@ -9,21 +11,16 @@
 <input onclick="doSmth()" type="button" value="BUTTON"/>
 
 <script>
-  var x = 0;
+
+var x = 0;
 function move(){
     var picture = document.getElementById("picture");
     x += 5;
     picture.style="margin-left:" + x +"px";
-
-
-
 }
 
 
-
-
-
-  function doSmth(){
+function doSmth(){
      var result = document.getElementById('result');
      result.style = "display:none;";
      //result.innerHTML = "<i>Pudge</i>";
