@@ -7,7 +7,7 @@
 <head>
     <title>Title</title>
     <style type="text/css">
-        tab1 { padding-left: 5em; }
+        tab1 { padding-left: 2em; }
     </style>
 </head>
 <body style="background-color:cornflowerblue;">
@@ -26,7 +26,7 @@
         <tr>
             <td width="110">Product code:</td>
             <td width="50">
-                <div id="${product.id}p">${product.id}</div>
+                <div id="${count.count}-${product.id}p">${product.id}</div>
             </td>
             <td width="200"></td>
             <td width="500"><h3>${product.productName}</h3></td>
@@ -42,26 +42,45 @@
         <tr>
             <td width="110"></td>
             <td width="50"></td>
-            <td width="200"></td>
-            <td style="text-align: right" width="500">
-
-                <div><img src="./static/images/minus_btn.png" onclick="minus(${product.id})" width="25px" height="25px"/>
-                    <span id="${product.id}"><tab1>1</tab1></span>
-                    <tab1><img src="./static/images/plus_btn.png" onclick="plus(${product.id})" width="25px" height="25px"/></tab1>
-                </div>
-
-            </td>
             <td style="text-align: center" width="200">
                 <form action="./CartServlet" method="post">
                     <input type="hidden" name="productId" value="${product.id}">
-                    <input type="submit" value="Add to cart" style="height:50px; width:150px"/>
+                    <input type="submit" value="Add 1 to the cart" style="height:30px; width:130px"/>
                 </form>
+            </td>
+            <td style="text-align: right" width="500">
+                <div><img src="./static/images/minus_btn.png" onclick="minus('${count.count}-${product.id}pq')" width="25px" height="25px"/>
+                    <span id="${count.count}-${product.id}pq">1<tab1></tab1></span>
+                    <img src="./static/images/plus_btn.png" onclick="plus('${count.count}-${product.id}pq')" width="25px" height="25px"/>
+                </div>
+            </td>
+            <td style="text-align: center" width="200">
+                <div><input onclick="buy('p1')" type="button" value="Add to the cart"/></div>
             </td>
         </tr>
     </table>
     <br><br>
 </c:forEach>
 
+<script>
+
+   function minus(id){
+  var product = document.getElementById(id);
+  var temp = +product.innerHTML - 1;
+  product.innerHTML = temp;
+}
+
+function plus(id){
+  var product = document.getElementById(id);
+  var temp = +product.innerHTML + 1;
+  product.innerHTML = temp;
+}
+
+
+
+
+
+</script>
 </body>
 </html>
 <%@include file="inc/footer.jsp" %>
