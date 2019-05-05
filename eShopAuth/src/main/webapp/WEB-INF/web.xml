@@ -36,6 +36,16 @@
     </servlet-mapping>
 
 
+        <servlet>
+        <servlet-name>CartServletMulti</servlet-name>
+        <servlet-class>servlet.CartServletMulti</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartServletMulti</servlet-name>
+        <url-pattern>/CartServletMulti</url-pattern>
+    </servlet-mapping>
+
+
     <servlet>
         <servlet-name>AuthServletLogin</servlet-name>
         <servlet-class>servlet.AuthServletLogin</servlet-class>
@@ -76,7 +86,24 @@
     </servlet-mapping>
 
 
+
+
     <servlet>
+        <servlet-name>AjaxTestServlet</servlet-name>
+        <servlet-class>servlet.AjaxTestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AjaxTestServlet</servlet-name>
+        <url-pattern>/AjaxTestServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+
+        <servlet>
         <servlet-name>CheckoutServlet</servlet-name>
         <servlet-class>servlet.CheckoutServlet</servlet-class>
     </servlet>
@@ -84,7 +111,6 @@
         <servlet-name>CheckoutServlet</servlet-name>
         <url-pattern>/CheckoutServlet</url-pattern>
     </servlet-mapping>
-
 
     <filter>
         <filter-name>AuthFilter</filter-name>
