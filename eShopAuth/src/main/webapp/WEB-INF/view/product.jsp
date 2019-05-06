@@ -15,8 +15,7 @@
 </head>
 <body style="background-color:cornflowerblue;">
 
-<script
-  src="https://code.jquery.com/jquery-3.4.0.js"
+<script src="https://code.jquery.com/jquery-3.4.0.js"
   integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
   crossorigin="anonymous"></script>
 
@@ -25,7 +24,7 @@
 <h2>Product list</h2>
 
 <c:forEach items="${products}" var="product" varStatus="count">
-    <table border="0">
+    <table border="1">
         <tr>
             <td width="110">Product code:</td>
             <td width="50">

@@ -10,7 +10,7 @@
 <body style="background-color:cornflowerblue;">
 
 <c:forEach var="mapEntry" items="${cart.productMap}">
-    <table border="0">
+    <table border="1">
     <tr>
         <td width="200">${mapEntry.key.productName} </td>
         <td width="500">Quantity: ${mapEntry.value}</td>
