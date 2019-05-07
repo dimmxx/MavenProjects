@@ -23,15 +23,17 @@ function buy(id) {
     //alert("Code: " + productId + " " + productName + ": " + productQuantity);
 
     $.ajax({
-    url: "./CartServletMulti",
-    type: "POST",
-    data: {productId : productId, quantity : productQuantity},
-    dataType: "html", success: function(html){
-    location.reload();
-  }
-  });
-
-
-
-
+        url: "./CartServletMulti",
+        type: "POST",
+        data: {productId: productId, quantity: productQuantity},
+        dataType: "html", success: function (html) {
+            location.reload();
+        }
+    });
 }
+
+function deleteItem(id) {
+        var productId = document.getElementById(id).innerHTML;
+        alert(productId);
+
+    }

@@ -9,23 +9,41 @@
 </head>
 <body style="background-color:cornflowerblue;">
 
-<c:forEach var="mapEntry" items="${cart.productMap}" varStatus="count">
-    <table border="1">
-        <tr>
-            <td><img src="./static/images/delete.png" width="20"></td>
-            <td>${count.count}.</td>
-            <td>${mapEntry.key.id}</td>
-            <td><img src="./static/images/${mapEntry.key.image}" width="30"></td>
-            <td>${mapEntry.key.productName}</td>
-            <td>${mapEntry.key.price}$</td>
-            <td>Quantity: ${mapEntry.value}</td>
+<script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+        crossorigin="anonymous"></script>
+
+<script src="./JS/product.js"></script>
+
+
+<table border="1">
+    <tr>
+            <td>Delete</td>
+            <td>No</td>
+            <td>Product id</td>
+            <td>Product image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td></td>
             <td>Sum</td>
-            <td>Button1</td>
+            <td>Change</td>
         </tr>
-    </table>
-    <br><br>
+
+<c:forEach var="mapEntry" items="${cart.productMap}" varStatus="count">
+        <tr>
+            <td style="text-align: center"><img src="./static/images/delete.png" onclick="deleteItem('${mapEntry.key.id}')" width="20"></td>
+            <td id="${mapEntry.key.id}" style="text-align: center">${count.count}</td>
+            <td style="text-align: center">${mapEntry.key.id}</td>
+            <td style="text-align: center"><img src="./static/images/${mapEntry.key.image}" width="30"></td>
+            <td>${mapEntry.key.productName}</td>
+            <td style="text-align: center">${mapEntry.key.price}$</td>
+            <td style="text-align: center"><input type="text" id="num1" value="${mapEntry.value}"/></td>
+            <td style="text-align: center">Sum</td>
+            <td style="text-align: center">Button1</td>
+        </tr>
 </c:forEach>
 
+</table>
 
 </body>
 </html>
