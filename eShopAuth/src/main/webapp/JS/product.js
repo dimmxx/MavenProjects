@@ -32,8 +32,3 @@ function buy(id) {
     });
 }
 
-function deleteItem(id) {
-        var productId = document.getElementById(id).innerHTML;
-        alert(productId);
-
-    }

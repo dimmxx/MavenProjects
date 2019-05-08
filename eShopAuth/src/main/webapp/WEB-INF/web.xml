@@ -36,7 +36,7 @@
     </servlet-mapping>
 
 
-        <servlet>
+    <servlet>
         <servlet-name>CartServletMulti</servlet-name>
         <servlet-class>servlet.CartServletMulti</servlet-class>
     </servlet>
@@ -86,24 +86,17 @@
     </servlet-mapping>
 
 
-
-
     <servlet>
-        <servlet-name>AjaxTestServlet</servlet-name>
-        <servlet-class>servlet.AjaxTestServlet</servlet-class>
+        <servlet-name>CartServletDelete</servlet-name>
+        <servlet-class>servlet.CartServletDelete</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>AjaxTestServlet</servlet-name>
-        <url-pattern>/AjaxTestServlet</url-pattern>
+        <servlet-name>CartServletDelete</servlet-name>
+        <url-pattern>/CartServletDelete</url-pattern>
     </servlet-mapping>
 
 
-
-
-
-
-
-        <servlet>
+    <servlet>
         <servlet-name>CheckoutServlet</servlet-name>
         <servlet-class>servlet.CheckoutServlet</servlet-class>
     </servlet>
