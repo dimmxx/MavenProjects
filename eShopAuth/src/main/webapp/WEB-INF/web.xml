@@ -87,16 +87,6 @@
 
 
     <servlet>
-        <servlet-name>CartServletDelete</servlet-name>
-        <servlet-class>servlet.CartServletDelete</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CartServletDelete</servlet-name>
-        <url-pattern>/CartServletDelete</url-pattern>
-    </servlet-mapping>
-
-
-    <servlet>
         <servlet-name>CheckoutServlet</servlet-name>
         <servlet-class>servlet.CheckoutServlet</servlet-class>
     </servlet>

@@ -47,7 +47,7 @@
             <td style="text-align: center" width="200">
                 <form action="./CartServlet" method="post">
                     <input type="hidden" name="productId" value="${product.id}">
-                    <input type="submit" value="Add 1 to the cart" style="height:30px; width:130px"/>
+                    <input type="submit" value="Quick buy" style="height:30px; width:130px"/>
                 </form>
             </td>
             <td style="text-align: right" width="500">

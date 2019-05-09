@@ -17,20 +17,29 @@ public class CartServletMulti extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        Cart cart = null;
+
         String productId = req.getParameter("productId");
+        String productQuantity = req.getParameter("productQuantity");
+        Boolean changeQuantity = Boolean.valueOf(req.getParameter("changeQuantity"));
+
+        Cart cart = null;
         HttpSession session = req.getSession();
         if (session.getAttribute("cart") != null) {
             cart = (Cart) session.getAttribute("cart");
         }
         CartController cartController = new CartController(cart);
-        if (productId != null) {
-            cartController.deleteProductFromMap(Integer.valueOf(productId));
-            session.setAttribute("cart", cartController.getCart());
+
+        if(!changeQuantity || changeQuantity == null) {
+            if (productId != null) {
+                cartController.deleteProductFromMap(Integer.valueOf(productId));
+            }
         }
+        if(changeQuantity){
+            cartController.changeQuantityInMap(Integer.valueOf(productId), Integer.valueOf(productQuantity));
+        }
+        session.setAttribute("cart", cartController.getCart());
+
     }
-
-
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

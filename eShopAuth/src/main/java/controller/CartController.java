@@ -33,6 +33,17 @@ public class CartController {
         }
     }
 
+    public void changeQuantityInMap(int id, int quantity){
+        Iterator<Product> it = cart.getProductMap().keySet().iterator();
+        while (it.hasNext()){
+            Product key = it.next();
+            if(key.getId() == id){
+                cart.getProductMap().put(key, quantity);
+            }
+        }
+    }
+
+
     public Cart getCart() {
         return cart;
     }
